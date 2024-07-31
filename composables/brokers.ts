@@ -1,5 +1,5 @@
-import { getBrokerById } from '~/assets/api/brokers/getBrokerById'
-import { getBroker, getSearchBroker } from '~/assets/api/brokers/getBroker'
+import { getBrokerById } from '~/api/brokers/getBrokerById'
+import { getBroker, getSearchBroker } from '~/api/brokers/getBroker'
 import type { IBrokerSearchParams } from '~/types/broker/broker'
 import { brokerSearchAdapter } from '~/utils/adapters/brokerSearchAdapter'
 

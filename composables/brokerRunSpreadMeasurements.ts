@@ -1,4 +1,4 @@
-import { createBrokerRunSpreadMeasurements } from '~/assets/api/brokers/brokerRunSpreadMeasurements'
+import { createBrokerRunSpreadMeasurements } from '~/api/brokers/brokerRunSpreadMeasurements'
 import type { iBrokerRunSpreadMeasurements } from '~/types/broker/brokerRunSpreadMeasurements'
 
 export const useBrokerRunSpreadMeasurements = () => {

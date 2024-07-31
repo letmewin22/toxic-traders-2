@@ -3,7 +3,7 @@ import {
   deleteBrokerRestrictedCountries,
   getBrokerRestrictedCountries,
   updateBrokerRestrictedCountries,
-} from '~/assets/api/brokers/brokerRestrictedCountries'
+} from '~/api/brokers/brokerRestrictedCountries'
 
 export const useBrokerRestrictedCountries = () => {
   const { addToast } = useToasts()

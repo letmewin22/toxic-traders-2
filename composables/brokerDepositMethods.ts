@@ -3,7 +3,7 @@ import {
   deleteBrokerDepositMethods,
   getBrokerDepositMethods,
   updateBrokerDepositMethods,
-} from '~/assets/api/brokers/brokerDepositMethods'
+} from '~/api/brokers/brokerDepositMethods'
 
 export const useBrokerDepositMethods = () => {
   const { addToast } = useToasts()

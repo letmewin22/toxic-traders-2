@@ -3,7 +3,7 @@ import {
   deleteBrokerPlatforms,
   getBrokerPlatforms,
   updateBrokerPlatforms,
-} from '~/assets/api/brokers/brokerPlatforms'
+} from '~/api/brokers/brokerPlatforms'
 
 export const useBrokerPlatforms = () => {
   const { addToast } = useToasts()

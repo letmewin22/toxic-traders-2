@@ -2,7 +2,7 @@ import {
   createBrokerServerAccount,
   deleteBrokerServerAccount,
   updateBrokerServerAccount,
-} from '~/assets/api/brokers/brokerServerAccount'
+} from '~/api/brokers/brokerServerAccount'
 
 export const useBrokerServerAccount = () => {
   const { addToast } = useToasts()

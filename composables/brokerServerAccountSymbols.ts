@@ -6,7 +6,7 @@ import {
   getBrokerServerAccountSymbolsSpreadsAll,
   getBrokerServerAccountSymbolsSpreadsCurrent,
   getBrokerServerAccountSymbolsSpreadsSchedule,
-} from '~/assets/api/brokers/brokerServerAccountSymbols'
+} from '~/api/brokers/brokerServerAccountSymbols'
 import type {
   iBrokerServerAccountSymbolsSpreadsAllParams,
   iBrokerServerAccountSymbolsSpreadsCurrent,
