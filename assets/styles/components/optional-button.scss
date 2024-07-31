@@ -1,0 +1,9 @@
+.optional-button {
+  @include button-small;
+  color: var(--secondary-light);
+  background-color: transparent;
+  transition: color 0.3s ease;
+  &:hover {
+    color: var(--primary-default);
+  }
+}

@@ -1,0 +1,23 @@
+.delete-modal__modal-wrapper {
+  padding-top: 16px;
+}
+
+.delete-modal__modal-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.delete-modal__delete-text {
+  @include text-body;
+  color: var(--secondary-default);
+}
+
+.delete-modal__modal-btn-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  column-gap: 8px;
+  margin-top: 32px;
+  width: 100%;
+}

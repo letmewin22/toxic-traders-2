@@ -1,0 +1,111 @@
+* {
+  &::selection {
+    color: white;
+    background: #ece5df;
+  }
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  color: var(--black);
+  background-color: var(--secondary-light2);
+  font-size: 1rem;
+  position: relative;
+  font-family: sans-serif;
+  overscroll-behavior-y: none;
+  height: fit-content;
+  @include smooth-font;
+  @include text-body;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  @media (max-width: $br1) {
+    font-size: 16px;
+  }
+}
+
+.modal-open {
+  overflow: hidden;
+}
+
+.e-landscape {
+  @include coverdiv(fixed);
+  z-index: 100000;
+  background: var(--bg);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+  p {
+    font-size: 1.5rem;
+    text-align: center;
+    max-width: 80%;
+
+    @media (max-width: $br1) {
+      max-width: size(900, 320);
+    }
+  }
+}
+
+.landscape {
+  .e-landscape {
+    display: flex;
+  }
+}
+
+.e-fixed {
+  overflow: hidden !important;
+}
+
+.page-enter-from {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.2s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.25s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.nav-hidden {
+  .header {
+    transform: translateY(-100%) !important;
+    opacity: 0;
+  }
+}
+
+.password-eye {
+  .password-eye__img {
+    &:last-child {
+      display: none;
+    }
+  }
+
+  &--visible {
+    .password-eye__img {
+      &:first-child {
+        display: none;
+      }
+
+      &:last-child {
+        display: block;
+      }
+    }
+  }
+}

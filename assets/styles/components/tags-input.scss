@@ -1,0 +1,62 @@
+.tags-input {
+  width: 100%;
+}
+
+.tags-input__wrapper {
+  position: relative;
+}
+
+.tags-input__badge-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 8px;
+  row-gap: 12px;
+}
+
+.tags-input__badge {
+  flex: 0 1 auto;
+}
+
+.tags-input__input {
+  --width: 46px;
+  flex: 1 1 auto;
+  background-color: transparent;
+  max-width: 100%;
+  // width: 46px;
+  width: var(--width);
+}
+
+.tags-input__dropdown {
+  position: absolute;
+  left: -20px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+  width: 280px;
+  height: fit-content;
+  max-height: 0;
+  overflow: auto;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  z-index: 10;
+
+  &--opened {
+    max-height: 350px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+.tags-input__dropdown-item {
+  cursor: pointer;
+  padding: 10px;
+  background-color: var(--white);
+  transition: background-color 0.3s ease;
+  @include button-small;
+  color: var(--black);
+
+  &:hover {
+    background-color: var(--primary-light);
+  }
+}

@@ -1,0 +1,49 @@
+.brokers-search {
+  transition: all 0.3s ease;
+  width: 0;
+  opacity: 0;
+  pointer-events: none;
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 76vh;
+  max-width: 260px;
+
+  &--opened {
+    width: 260px;
+    opacity: 1;
+    pointer-events: visible;
+    flex: 1 0 auto;
+  }
+}
+
+.broker__search-clip {
+  width: 260px;
+  padding: 20px;
+}
+
+.brokers-search__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brokers-search__title {
+  @include heading-m-h5;
+  color: var(--black);
+}
+
+.brokers-search__reset {
+  @include button-small;
+  background-color: transparent;
+  color: var(--secondary-light);
+}
+
+.brokers-search__content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  margin-top: 20px;
+}

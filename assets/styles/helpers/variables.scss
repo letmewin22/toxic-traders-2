@@ -1,0 +1,46 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --primary-default: #4f85d9;
+  --primary-dark: #355b96;
+  --primary-light: #e8f6ff;
+  --primary-light2: #d1edff;
+  --secondary-default: #6c757d;
+  --secondary-dark: #212527;
+  --secondary-light: #abb5be;
+  --secondary-light2: #f5f3f3;
+  --gray-100: #f8f9fa;
+  --gray-200: #e9ecef;
+  --gray-300: #dee2e6;
+  --gray-400: #ced4da;
+  --gray-500: #ced4da;
+  --gray-600: #6c757d;
+  --gray-700: #495057;
+  --gray-800: #343a40;
+  --gray-900: #212529;
+  --status-success: #28a745;
+  --status-danger: #dc3545;
+  --status-warning: #ffc107;
+  --status-info: #3e3e3e;
+  --vh: 100vh;
+}
+
+//screen config
+$maxWidth: 1920;
+$minWidth: 375;
+
+//breakpoints
+$uls: 2100px;
+$ls: 1366px;
+$br1: 1060px;
+$br2: 960px;
+$br3: 768px;
+$br4: 460px;
+
+//easings
+$easing: cubic-bezier(0.16, 1, 0.3, 1);
+
+// layouts
+$g-offset: 24px;
+$g-sm: 32px;
+$g-s: 20px;

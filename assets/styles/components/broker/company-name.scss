@@ -1,0 +1,10 @@
+.company-name__item {
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 8px 16px;
+}
+
+.company-name__text {
+  @include text-body;
+  color: var(--secondary-dark);
+}

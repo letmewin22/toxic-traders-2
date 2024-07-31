@@ -1,0 +1,61 @@
+.type-of-account-table__schedule {
+  padding-top: 16px;
+}
+
+.type-of-account-table__schedule-item {
+  margin-top: 20px;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+}
+
+.type-of-account-table__schedule-title {
+  @include heading-m-h6;
+  color: var(--black);
+}
+
+.type-of-account-table__schedule-content {
+  margin-top: 16px;
+}
+
+.type-of-account-table__schedule-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+  margin-top: 16px;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+}
+
+.type-of-account-table__schedule-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 1.25em;
+  font-size: 16px;
+  color: var(--black);
+}
+
+.type-of-account-table__schedule-date {
+  .dp__input {
+    @include input-default;
+    color: var(--black);
+    border-radius: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+
+.type-of-account-table__btn {
+  margin: 0 auto;
+  margin-top: 28px;
+}
+
+.type-of-account-table__schedule-btn {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 8px;
+  margin-top: 32px;
+}

@@ -1,0 +1,44 @@
+.container {
+  width: 100%;
+  position: relative;
+  padding-left: $g-offset;
+  padding-right: $g-offset;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  @media (max-width: $br1) {
+    max-width: 100%;
+    padding-left: $g-sm;
+    padding-right: $g-sm;
+  }
+
+  @media (max-width: $br4) {
+    padding-left: $g-s;
+    padding-right: $g-s;
+  }
+}
+
+.container--fh {
+  height: 100%;
+}
+
+.container--nm {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 25px;
+  grid-auto-flow: row;
+}
+
+@mixin col($start, $end) {
+  grid-column: #{$start}/#{$end + 1};
+}
+
+@mixin row($start, $end) {
+  grid-row: #{$start}/#{$end + 1};
+}

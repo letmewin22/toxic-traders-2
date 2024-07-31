@@ -1,0 +1,87 @@
+.brokers {
+  padding-top: 142px;
+  padding-bottom: 116px;
+}
+
+.brokers__menu-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brokers__title {
+  @include heading-m-h1;
+}
+
+.brokers__menu {
+  display: flex;
+  align-items: center;
+  column-gap: 19px;
+}
+
+.brokers__content {
+  --search-width: 0px;
+  display: flex;
+  column-gap: 0;
+  transition: column-gap 0.3s ease;
+  margin-top: 32px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  &--search {
+    column-gap: 16px;
+    --search-width: 256px;
+  }
+}
+
+.brokers__table-wrapper {
+  // width: calc(100% - 40px); // width search + column-gap
+  flex: 0 100%;
+  width: calc(100% - var(--search-width));
+  margin: 0 auto;
+  // overflow: hidden;
+}
+
+.brokers__pagination {
+  margin-top: 46px;
+}
+
+.brokers__modal {
+  .modal__content {
+    max-width: 728px;
+  }
+
+  .modal__container {
+    padding: 32px;
+    padding-top: 0;
+  }
+
+  .modal__header {
+    border: none;
+  }
+}
+
+.brokers__error-message {
+  @include text-big;
+  margin-top: 40px;
+  flex: 0 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.brokers__table {
+  .table-cell {
+    min-width: 240px;
+  }
+  .table-cell--id {
+    min-width: 100px;
+    width: 100px;
+  }
+}
+
+.brokers__loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

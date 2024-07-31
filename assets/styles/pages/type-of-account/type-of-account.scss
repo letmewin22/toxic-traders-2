@@ -1,0 +1,68 @@
+.type-of-account {
+  padding: 127px 0;
+}
+
+.type-of-account__info {
+  @include col(1, 3);
+}
+
+.type-of-account__info-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  max-width: 170px;
+}
+
+.type-of-account__info-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 5px;
+}
+
+.type-of-account__info-title {
+  @include heading-m-h6;
+  color: var(--black);
+}
+
+.type-of-account__info-text {
+  @include text-body;
+  color: var(--black);
+  text-align: right;
+}
+
+.type-of-account__info-btn {
+  max-width: 153px;
+  margin-top: 24px;
+}
+
+.type-of-account__notes {
+  @include col(4, 6);
+  max-width: 280px;
+}
+
+.type-of-account__notes-input {
+  margin-top: 6px;
+}
+
+.type-of-account__server {
+  @include col(9, 12);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.type-of-account__title {
+  @include heading-m-h2;
+  color: var(--secondary-dark);
+  text-align: right;
+}
+
+.type-of-account__bottom-block {
+  margin-top: 40px;
+}
+
+.type-of-account__pagination {
+  margin-top: 46px;
+}

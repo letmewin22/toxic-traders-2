@@ -1,0 +1,135 @@
+.table {
+  transition: width 0.3s ease;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  height: fit-content;
+
+  &--full-width {
+    .table-cell {
+      width: 100% !important;
+    }
+    .table-row {
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    }
+  }
+}
+
+.table-cell {
+  text-align: start;
+  padding-right: 30px;
+  display: flex;
+  justify-content: flex-start;
+  text-align: start;
+  width: 100%;
+  padding: 20px;
+  padding-right: 30px;
+  min-width: 360px;
+  overflow-wrap: anywhere;
+}
+
+.table__wrapper {
+  overflow: auto;
+  position: relative;
+}
+
+.table-head {
+  position: sticky;
+  top: 0;
+  .table-row {
+    @include heading-b-h6;
+  }
+
+  .table-cell {
+    color: var(--white);
+    align-items: flex-start;
+  }
+
+  .table-row {
+    background-color: var(--primary-default);
+  }
+}
+
+.table-body {
+  max-height: 60vh;
+
+  .table-row {
+    @include text-body;
+    margin-top: 20px;
+  }
+
+  .table-cell {
+    align-items: center;
+  }
+}
+
+.table-row {
+  display: grid;
+  grid-auto-flow: column;
+  // grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  min-width: fit-content;
+  width: 100%;
+  background-color: var(--white);
+
+  transition: background-color 0.3s ease;
+  &--link {
+    &:hover {
+      background-color: var(--primary-light);
+    }
+  }
+}
+
+.table-cell__link {
+  @include text-link;
+  display: flex;
+  align-items: center;
+  column-gap: 6px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+
+  svg {
+    display: block;
+    width: 8px;
+    height: 8px;
+    flex: 1 0 auto;
+  }
+}
+
+.table-cell__btn {
+  @include heading-b-h6;
+  color: var(--white);
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  column-gap: 6px;
+  width: fit-content;
+  text-align: left;
+
+  svg {
+    display: block;
+    width: 8px;
+    height: 8px;
+    flex: 1 0 auto;
+  }
+}
+
+.table-cell__modal-btn {
+  @include text-link;
+  display: flex;
+  align-items: center;
+  column-gap: 6px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  background-color: transparent;
+
+  svg {
+    display: block;
+    width: 8px;
+    height: 8px;
+    flex: 1 0 auto;
+  }
+}
+
+.table-cell__img-btn {
+  background-color: transparent;
+}

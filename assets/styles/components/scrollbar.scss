@@ -1,0 +1,89 @@
+/* Hide scrollbar for Chrome, Safari and Opera */
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10000000 !important;
+  user-select: none;
+  overflow: hidden;
+  padding: 2px;
+  padding-left: 0px;
+  display: flex;
+
+  &--y {
+    --w: 12px;
+    --h: 100%;
+    --thumb-w: 6px;
+    --thumb-h: 100px;
+    --thumb-active-w: 10px;
+    --thumb-active-h: var(--thumb-h);
+    justify-content: center;
+  }
+  &--x {
+    --w: 100%;
+    --h: 12px;
+    --thumb-w: 100px;
+    --thumb-h: 6px;
+    --thumb-active-w: var(--thumb-w);
+    --thumb-active-h: 10px;
+    top: auto;
+    bottom: 0;
+    align-items: center;
+  }
+
+  width: var(--w);
+  height: var(--h);
+
+  @media (min-width: $br2) {
+    &:hover {
+      .scrollbar__thumb {
+        width: var(--thumb-active-w);
+        height: var(--thumb-active-h);
+        opacity: 0.7;
+        border-radius: 10px;
+        background-color: var(--primary-dark);
+      }
+    }
+  }
+  &.hidden {
+    display: none;
+  }
+  // @include media('<=1024px') {
+  //   display: none;
+  // }
+}
+
+.scrollbar__thumb {
+  width: var(--thumb-w);
+  border-radius: 7px;
+  pointer-events: none;
+  height: var(--thumb-h);
+  background: #6b6b6b;
+  display: block;
+  position: relative;
+  user-select: none;
+  transition: width 0.2s ease, opacity 0.3s ease, border-radius 0.3s ease,
+    background-color 0.3s ease;
+  right: 0;
+  // opacity: 0;
+  &.scrolling {
+    opacity: 0.7;
+  }
+  &.active {
+    width: var(--thumb-active-w);
+    height: var(--thumb-active-h);
+    opacity: 0.7;
+    border-radius: 10px;
+    background-color: var(--primary-dark);
+  }
+}

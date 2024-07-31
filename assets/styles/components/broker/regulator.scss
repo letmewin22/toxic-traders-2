@@ -1,0 +1,93 @@
+.regulator__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.regulator__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 4px;
+  padding: 4px 8px;
+  background-color: var(--primary-light);
+}
+
+.regulator__item-name {
+  @include text-body;
+  color: var(--secondary-dark);
+
+  &:hover {
+    .regulator__info {
+      opacity: 1;
+    }
+  }
+}
+
+.regulator__info {
+  position: absolute;
+  left: 0;
+  background-color: var(--secondary-default);
+  padding: 6px 8px;
+  border-radius: 10px;
+  z-index: 1;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.regulator__info-text {
+  @include text-small;
+  color: var(--white);
+}
+
+.regulator__link {
+  @include text-link;
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  color: var(--secondary-dark);
+
+  svg {
+    display: block;
+    width: 8px;
+    height: 8px;
+    flex: 1 0 auto;
+  }
+
+  &--text {
+    text-decoration: none;
+  }
+}
+
+.regulator__accordion-wrapper {
+  margin-top: 16px;
+}
+
+.regulator__accordion {
+  margin-top: 20px;
+
+  .accordion__content-wrapper {
+    background-color: transparent;
+  }
+  .accordion__content {
+    padding: 0;
+  }
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+}
+
+.regulator__add-btn {
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.regulator__btn {
+  margin-left: auto;
+  margin-top: 32px;
+}

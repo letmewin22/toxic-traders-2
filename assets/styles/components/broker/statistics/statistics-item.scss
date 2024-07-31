@@ -1,0 +1,36 @@
+.statistics-item {
+  border-radius: 10px;
+  padding: 20px;
+  background-color: var(--secondary-light2);
+}
+
+.statistics-item__title-wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+}
+
+.statistics-item__img {
+  display: block;
+  width: 20px;
+  height: 13px;
+  max-width: 100%;
+}
+
+.statistics-item__title {
+  @include heading-m-h5;
+  color: var(--black);
+}
+
+.statistics-item__text {
+  @include text-body;
+  color: var(--black);
+  margin-top: 10px;
+  display: block;
+
+  &--link {
+    color: var(--primary-dark);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}

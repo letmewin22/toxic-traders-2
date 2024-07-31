@@ -1,0 +1,34 @@
+.settings__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.settings__search-input {
+  max-width: 240px;
+
+  path {
+    fill: var(--secondary-light);
+  }
+}
+
+.settings__content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  margin-top: 26px;
+
+  .checkbox-input {
+    flex-direction: row-reverse;
+  }
+}
+
+.settings__info {
+  @include button-small;
+  color: var(--secondary-light);
+  display: flex;
+  align-items: center;
+  column-gap: 33px;
+  margin-top: 24px;
+}

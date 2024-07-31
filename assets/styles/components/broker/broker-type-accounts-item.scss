@@ -1,0 +1,178 @@
+.broker-type-accounts-item {
+  position: relative;
+  height: 104px;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 12px;
+  padding: 0 10px;
+  background-color: var(--primary-default);
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: var(--primary-dark);
+  }
+
+  &--new {
+    padding: 0;
+    background-color: var(--white);
+
+    .broker-type-accounts-item__title {
+      color: var(--primary-default);
+    }
+
+    .broker-type-accounts-item__content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: transparent;
+      column-gap: 10px;
+      width: 100%;
+      height: 100%;
+      padding: 0 10px;
+
+      svg {
+        display: block;
+        width: 24px;
+        height: 24px;
+
+        path {
+          fill: var(--primary-default);
+        }
+      }
+    }
+
+    &:hover {
+      background-color: var(--gray-200);
+    }
+  }
+}
+
+.broker-type-accounts-item__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+
+.broker-type-accounts-item__btn-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+}
+
+.broker-type-accounts-item__btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: block;
+  width: 12px;
+  height: 12px;
+
+  span {
+    position: absolute;
+    background-color: var(--white);
+    border-radius: 50%;
+    left: 50%;
+    width: 2.5px;
+    height: 2.5px;
+
+    &:nth-child(1) {
+      top: 0;
+      transform: translateX(-50%);
+    }
+
+    &:nth-child(2) {
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &:nth-child(3) {
+      bottom: 0;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.broker-type-accounts-item__title {
+  @include heading-m-h5;
+  color: var(--white);
+  text-align: center;
+}
+
+.broker-type-accounts-item__menu {
+  position: absolute;
+  top: 12px;
+  right: 23px;
+  height: fit-content;
+  min-width: 100px;
+  padding: 8px;
+  background-color: var(--white);
+  border-radius: 6px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+
+  &--opened {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+.broker-type-accounts-item__menu-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+  width: 100%;
+  height: 100%;
+}
+
+.broker-type-accounts-item__menu-btn {
+  display: flex;
+  align-items: center;
+  column-gap: 6px;
+  background-color: transparent;
+  @include button-small;
+  transition: opacity 0.3s ease;
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:first-child {
+    color: var(--secodary-dark);
+  }
+
+  &:last-child {
+    color: var(--status-danger);
+  }
+}
+
+.broker-type-accounts-item__modal-wrapper {
+  padding-top: 16px;
+}
+
+.broker-type-accounts-item__modal-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.broker-type-accounts-item__delete-text {
+  @include text-body;
+  color: var(--secondary-default);
+}
+
+.broker-type-accounts-item__modal-btn-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  column-gap: 8px;
+  margin-top: 32px;
+  width: 100%;
+}

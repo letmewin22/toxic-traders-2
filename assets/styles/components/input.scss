@@ -1,0 +1,131 @@
+.input {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &--textarea {
+    .input__type {
+      outline: none;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      resize: none;
+      height: 105px;
+      @include text-body;
+    }
+  }
+
+  &.js-focus {
+    .input__type {
+      border-color: var(--primary-default);
+    }
+  }
+}
+
+.input__title {
+  @include text-body;
+  line-height: 1.25em;
+  margin-bottom: 6px;
+
+  span {
+    color: var(--status-danger);
+  }
+}
+
+.input__wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: fit-content;
+}
+
+.input__type {
+  display: block;
+  @include input-default;
+  padding: 12px 16px;
+  background-color: var(--white);
+  color: var(--secondary-dark);
+  border: 1px solid var(--gray-200);
+  border-radius: 10px;
+  transition: border 0.3s ease;
+  width: 100%;
+  max-width: 100%;
+
+  &--error {
+    border-color: var(--status-danger) !important;
+  }
+
+  &--success {
+    border-color: var(--status-success) !important;
+  }
+
+  &--left-btn {
+    padding-left: 40px;
+  }
+
+  &--right-btn {
+    padding-right: 40px;
+  }
+
+  &:disabled {
+    opacity: 0.55;
+  }
+}
+
+.input__type[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.input__error {
+  @include text-small;
+  color: var(--status-danger);
+  margin-top: 6px;
+}
+
+.input__btn {
+  display: block;
+  background-color: transparent;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+  }
+
+  &.left-button {
+    left: 16px;
+  }
+
+  &.right-button {
+    right: 16px;
+  }
+}
+
+//Reset autofill styles
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--gray-700);
+  box-shadow: 0 0 0px 1000px var(--white) inset;
+  border-radius: 10px;
+  transition: background-color 5000s ease-in-out 0s;
+  color: var(--gray-700);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

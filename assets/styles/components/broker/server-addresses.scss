@@ -1,0 +1,10 @@
+.server-addresses__item {
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 8px 16px;
+}
+
+.server-addresses__text {
+  @include text-body;
+  color: var(--secondary-dark);
+}
