@@ -98,3 +98,4 @@ onMounted(async () => {
     </TheAccordion>
   </div>
 </template>
+~/assets/api/brokers/brokerRestrictedCountriesList~/assets/api/countries/getCountries

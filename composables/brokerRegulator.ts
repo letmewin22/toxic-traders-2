@@ -3,7 +3,7 @@ import {
   deleteBrokerRegulator,
   getBrokerRegulator,
   updateBrokerRegulator,
-} from '~/api/brokers/brokerRegulator'
+} from '~/assets/api/brokers/brokerRegulator'
 import type { iRegulatorItem } from '~/types/broker/brokerRegulator'
 
 export const useBrokerRegulator = () => {

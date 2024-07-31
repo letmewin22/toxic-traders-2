@@ -62,3 +62,4 @@ onMounted(async () => {
     </TheAccordion>
   </div>
 </template>
+~/assets/api/brokers/brokerPlatformsList

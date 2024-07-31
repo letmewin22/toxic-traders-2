@@ -2,7 +2,7 @@ import {
   createBrokerServerLocation,
   deleteBrokerServerLocation,
   getBrokerServerLocation,
-} from '~/api/brokers/brokerServerLocation'
+} from '~/assets/api/brokers/brokerServerLocation'
 
 export const useBrokerServerLocation = () => {
   const { addToast } = useToasts()

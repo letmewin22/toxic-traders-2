@@ -3,7 +3,7 @@ import {
   deleteBrokerReview,
   getBrokerReviews,
   updateBrokerReview,
-} from '~/api/brokers/brokerReviews'
+} from '~/assets/api/brokers/brokerReviews'
 
 export const useBrokerReviews = () => {
   const { addToast } = useToasts()

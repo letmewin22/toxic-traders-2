@@ -1,7 +1,7 @@
 import {
   getBrokerCompanyNames,
   getBrokerCompanyNamesById,
-} from '~/api/brokers/brokerCompanyNames'
+} from '~/assets/api/brokers/brokerCompanyNames'
 
 export const useBrokerCompanyNames = () => {
   const { addToast } = useToasts()

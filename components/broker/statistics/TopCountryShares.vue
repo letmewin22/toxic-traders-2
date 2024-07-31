@@ -84,3 +84,4 @@ onMounted(async () => {
     </ul>
   </div>
 </template>
+~/assets/api/countries/getCountries

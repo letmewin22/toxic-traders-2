@@ -192,3 +192,4 @@ onMounted(async () => {
     </TheModal>
   </div>
 </template>
+~/assets/api/brokers/brokerRegulatorNames

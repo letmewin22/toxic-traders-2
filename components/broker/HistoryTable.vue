@@ -66,3 +66,4 @@ const { sortState, onSort } = useSort(
     </TableBody>
   </Table>
 </template>
+~/assets/api/brokers/getBrokerLogs

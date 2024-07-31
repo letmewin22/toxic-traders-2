@@ -71,3 +71,4 @@ const onSort = async (sortState: ISortState) => {
     />
   </div>
 </template>
+~/assets/api/logs/getLogs
