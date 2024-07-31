@@ -2,8 +2,8 @@ import {
   createBrokerCategories,
   deleteBrokerCategories,
   getBrokerCategories,
-} from '~/api/brokers/brokerCategories'
-import { getBrokerCategoriesList } from '~/api/brokers/brokerCategoriesList'
+} from '~/utils/api/brokers/brokerCategories'
+import { getBrokerCategoriesList } from '~/utils/api/brokers/brokerCategoriesList'
 
 export const useBrokerCategories = () => {
   const { addToast } = useToasts()

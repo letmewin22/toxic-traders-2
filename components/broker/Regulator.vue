@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { getBrokerRegulatorNames } from '~/api/brokers/brokerRegulatorNames'
+import { getBrokerRegulatorNames } from '~/utils/api/brokers/brokerRegulatorNames'
 import type { iInput } from '~/types'
 import type { iRegulatorItem } from '~/types/broker/brokerRegulator'
 
@@ -192,4 +192,4 @@ onMounted(async () => {
     </TheModal>
   </div>
 </template>
-~/assets/api/brokers/brokerRegulatorNames
+~/assets/api/brokers/brokerRegulatorNames~/utils/api/brokers/brokerRegulatorNames

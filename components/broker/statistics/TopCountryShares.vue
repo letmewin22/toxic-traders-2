@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { getCountriesFlag } from '~/api/countries/getCountries'
+import { getCountriesFlag } from '~/utils/api/countries/getCountries'
 import type {
   iBrokerCompanyNameStatisticAhrefs,
   iBrokerCompanyNameStatisticSemrush,
@@ -84,4 +84,4 @@ onMounted(async () => {
     </ul>
   </div>
 </template>
-~/assets/api/countries/getCountries
+~/assets/api/countries/getCountries~/utils/api/countries/getCountries

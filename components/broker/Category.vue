@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { getBrokerCategoriesList } from '~/api/brokers/brokerCategoriesList'
+import { getBrokerCategoriesList } from '~/utils/api/brokers/brokerCategoriesList'
 import type { iInput } from '~/types'
 
 interface iProps {
@@ -130,4 +130,4 @@ onMounted(async () => {
     </TheModal>
   </div>
 </template>
-~/assets/api/brokers/brokerCategoriesList
+~/assets/api/brokers/brokerCategoriesList~/utils/api/brokers/brokerCategoriesList

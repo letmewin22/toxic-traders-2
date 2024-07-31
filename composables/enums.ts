@@ -1,9 +1,9 @@
-import { getBrokerDepositMethodsList } from '~/api/brokers/brokerDepositMethodsList'
-import { getBrokerPlatformsList } from '~/api/brokers/brokerPlatformsList'
-import { getBrokerRegulatorNames } from '~/api/brokers/brokerRegulatorNames'
-import { getExecutionMT4 } from '~/api/brokers/executionMT4'
-import { getExecutionMT5 } from '~/api/brokers/executionMT5'
-import { getFillPolicyList } from '~/api/brokers/fillPolicy'
+import { getBrokerDepositMethodsList } from '~/utils/api/brokers/brokerDepositMethodsList'
+import { getBrokerPlatformsList } from '~/utils/api/brokers/brokerPlatformsList'
+import { getBrokerRegulatorNames } from '~/utils/api/brokers/brokerRegulatorNames'
+import { getExecutionMT4 } from '~/utils/api/brokers/executionMT4'
+import { getExecutionMT5 } from '~/utils/api/brokers/executionMT5'
+import { getFillPolicyList } from '~/utils/api/brokers/fillPolicy'
 
 export const useEnums = () => {
   const platforms = useState('platforms', () => [])

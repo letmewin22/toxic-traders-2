@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { getBrokerRestrictedCountriesList } from '~/api/brokers/brokerRestrictedCountriesList'
-import { getCountriesFlag } from '~/api/countries/getCountries'
+import { getBrokerRestrictedCountriesList } from '~/utils/api/brokers/brokerRestrictedCountriesList'
+import { getCountriesFlag } from '~/utils/api/countries/getCountries'
 import type { iCountries } from '~/types/countries/countries'
 import getCountriesFullNames from '~/utils/getFullCountriesNames'
 
@@ -98,4 +98,4 @@ onMounted(async () => {
     </TheAccordion>
   </div>
 </template>
-~/assets/api/brokers/brokerRestrictedCountriesList~/assets/api/countries/getCountries
+~/assets/api/brokers/brokerRestrictedCountriesList~/assets/api/countries/getCountries~/utils/api/brokers/brokerRestrictedCountriesList~/utils/api/countries/getCountries

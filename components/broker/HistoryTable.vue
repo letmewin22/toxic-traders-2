@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { getBrokerLogs } from '~/api/brokers/getBrokerLogs'
+import { getBrokerLogs } from '~/utils/api/brokers/getBrokerLogs'
 import type { iBrokerLogItem } from '~/types/broker/brokerLogs'
 
 interface iProps {
@@ -66,4 +66,4 @@ const { sortState, onSort } = useSort(
     </TableBody>
   </Table>
 </template>
-~/assets/api/brokers/getBrokerLogs
+~/assets/api/brokers/getBrokerLogs~/utils/api/brokers/getBrokerLogs

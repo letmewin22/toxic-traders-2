@@ -1,4 +1,4 @@
-import { getBrokerServerAddresses } from '~/api/brokers/brokerServerAddresses'
+import { getBrokerServerAddresses } from '~/utils/api/brokers/brokerServerAddresses'
 
 export const useBrokerServerAddresses = () => {
   const { addToast } = useToasts()

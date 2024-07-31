@@ -2,7 +2,7 @@ import {
   deleteBrokerServerAccountNotes,
   getBrokerServerAccountNotes,
   updateBrokerServerAccountNotes,
-} from '~/api/brokers/brokerServerAccountNotes'
+} from '~/utils/api/brokers/brokerServerAccountNotes'
 
 export const useBrokerServerAccountNotes = () => {
   const { addToast } = useToasts()

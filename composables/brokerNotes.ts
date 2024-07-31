@@ -3,7 +3,7 @@ import {
   deleteBrokerNotes,
   getBrokerNotes,
   updateBrokerNotes,
-} from '~/api/brokers/brokerNotes'
+} from '~/utils/api/brokers/brokerNotes'
 
 export const useBrokerNotes = () => {
   const { addToast } = useToasts()

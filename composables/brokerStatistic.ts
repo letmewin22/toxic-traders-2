@@ -1,8 +1,8 @@
 import {
   getBrokerStatisticProviders,
   getCurrentBrokerStatisticProvider,
-} from '~/api/brokers/brokerStatisticProviders'
-import { getCurrentBrokerStatisticTraffic } from '~/api/brokers/brokerStatisticTraffic'
+} from '~/utils/api/brokers/brokerStatisticProviders'
+import { getCurrentBrokerStatisticTraffic } from '~/utils/api/brokers/brokerStatisticTraffic'
 
 export const useBrokerStatistic = () => {
   const { addToast } = useToasts()

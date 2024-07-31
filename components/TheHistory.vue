@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { getLogs } from '~/api/logs/getLogs'
+import { getLogs } from '~/utils/api/logs/getLogs'
 import type { iLogItem } from '~/types/logs'
 
 const logsList = ref<iLogItem[]>([])
@@ -71,4 +71,4 @@ const onSort = async (sortState: ISortState) => {
     />
   </div>
 </template>
-~/assets/api/logs/getLogs
+~/assets/api/logs/getLogs~/utils/api/logs/getLogs

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { getBrokerDepositMethodsList } from '~/api/brokers/brokerDepositMethodsList'
+import { getBrokerDepositMethodsList } from '~/utils/api/brokers/brokerDepositMethodsList'
 
 interface iProps {
   brokerId: number
@@ -63,4 +63,4 @@ onMounted(async () => {
     </TheAccordion>
   </div>
 </template>
-~/assets/api/brokers/brokerDepositMethodsList
+~/assets/api/brokers/brokerDepositMethodsList~/utils/api/brokers/brokerDepositMethodsList
